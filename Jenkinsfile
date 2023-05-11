@@ -21,9 +21,9 @@ pipeline {
       steps {
         sh '''if [ \'grep -c git /tmp/paquets\' -ne 0]
 then
-dpkg -s git
+dpkg -s nano
 else
-sudo apt-get install -y git
+sudo apt-get install -y nano
 fi'''
       }
     }
