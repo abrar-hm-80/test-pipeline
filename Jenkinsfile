@@ -19,7 +19,7 @@ pipeline {
 
     stage('Stage3') {
       steps {
-        sh '''if [ \'grep -c git /tmp/paquets\' -ne 0]
+        sh '''if [ $(grep -c git /tmp/paquets) -ne 0 ]
 then
 dpkg -s nano
 else
