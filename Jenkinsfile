@@ -13,7 +13,7 @@ pipeline {
 
     stage('Stage2') {
       steps {
-        sh 'dpkg -1 > /tmp/paquets'
+        sh 'dpkg -l > /tmp/paquets'
       }
     }
 
